@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wvdd-codestar-blog.herokuapp.com', '8000-wouterit-djangoblogproj-ozby2t48gd3.ws-eu106.gitpod.io', 'wvdd-codestar-blog-f475d0fc0209.herokuapp.com']
+ALLOWED_HOSTS = ["wvdd-codestar-blog.herokuapp.com", "localhost", "8000-wouterit-djangoblogproj-ozby2t48gd3.ws-eu106.gitpod.io"]
 
 
 # Application definition
@@ -131,7 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATIC_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
